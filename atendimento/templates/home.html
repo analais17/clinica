@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block conteudo%} 
+    
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron">
+                    <h1 class="display-4">Olá, tudo bem?</h1>
+                    <p class="lead">Seja bem-vindo ao serviço de gestão de atendimento clínico. </p>
+                    <hr class="my-4">
+                    <p>Conheça abaixo as opções do sistema:</p>
+
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://www.arsalgarve.min-saude.pt/wp-content/uploads/sites/2/2016/12/profissionais.png"
+                        class="card-img-top" alt="footer-logo.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Clientes</h5>
+                        <p class="card-text">Gerencie o cadastro dos clientes da sua clínica</p>
+                        <a href="/atendimento/paciente" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="http://www.arsalgarve.min-saude.pt/wp-content/uploads/sites/2/2016/12/profissionais.png"
+                            class="card-img-top" alt="footer-logo.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Médicos</h5>
+                            <p class="card-text">Gerencie os profissionais que atendem na sua clínica.</p>
+                            <a href="/atendimento/medico" class="btn btn-primary">Go</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="http://www.arsalgarve.min-saude.pt/wp-content/uploads/sites/2/2016/12/profissionais.png"
+                                class="card-img-top" alt="footer-logo.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Agendamento</h5>
+                                <p class="card-text">Agende consultas com os médicos de acordo com a escala.</p>
+                                <a href="/atendimento/agendamento" class="btn btn-primary">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="http://www.arsalgarve.min-saude.pt/wp-content/uploads/sites/2/2016/12/profissionais.png"
+                                    class="card-img-top" alt="footer-logo.png">
+                                <div class="card-body">
+                                    <h5 class="card-title">Consultas</h5>
+                                    <p class="card-text">Os médicos podem atender os pacientes e registrar os agendamentos </p>
+                                    <a href="#" class="btn btn-primary">Go</a>
+                                </div>
+                            </div>
+                        </div>       
+        </div>
+
+
+
+   
+
+{% endblock %}
