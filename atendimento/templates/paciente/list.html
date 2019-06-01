@@ -1,19 +1,31 @@
 
    {% extends 'base.html' %}
-   {% block conteudo%}                 
+   {% block conteudo%} 
+    {{pacientes | length}}   
     <table class="table">
+
         <tr>
+            <th>ID</th>
             <th>Nome:</th>
-            <th>Data de nascimento:</th>
+            <th>Data </th>
             <th>sexo:</th>
+            <th>CPF</th>
         </tr>
+        <body>
+            
+    </body>
+    {%for paciente in pacientes %}
         <tr>
-            <td>Laís</td>
-            <td>03/03/2002</td>
-            <td>Feminino</td>
+            <td>{{paciente.id}}</td>
+            <td>{{paciente.nome}}</td>
+            <td>{{paciente.dt_nasc}}</td>
+            <td>{{paciente.sexo}}</td>
+            <td>{{paciente.cpf}}</td>
         </tr>
-       
+    {% endfor %}
+    </body>
     </table>
+    <p>Foram encontrados {{pacientes | length}}  cadastrados!</p>
     
     {% endblock %}
 

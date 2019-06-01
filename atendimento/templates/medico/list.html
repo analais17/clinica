@@ -3,17 +3,25 @@
      {% block conteudo%}          
     <table class="table">
         <tr>
-            <th>CRM</th>
+            <th>ID</th>
             <th>Nome do médico</th>
+            <th>CRM</th>
             <th>Especialidade</th>
+            <th>idade</th>
         </tr>
         <tr>
-            <td>123</td>
-            <td>João</td>
-            <td>Dentista</td>
+            <body>
+            {%for medico in medicos %}
+            <td>{{medico.id}}</td>
+            <td>{{medico.nome}}</td>
+            <td>{{medico.crm}}</td>
+            <td>{{medico.especialidade}}</td>
+            <td>{{medico.idade}}</td>
         </tr>
-       
+        {% endfor %}
+           
+       </body>
     </table>
    
-
+<p>foram encontrados {{medicos | length}} cadastrados</p>
 {% endblock %}
